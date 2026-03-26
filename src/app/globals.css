@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  /* Base Colors */
+  --color-background: var(--bg-main);
+  --color-surface: var(--bg-surface);
+  --color-surface-hover: var(--bg-surface-hover);
+  
+  /* Text Colors */
+  --color-text-primary: var(--text-main);
+  --color-text-secondary: var(--text-muted);
+  --color-text-inverse: var(--text-inverse);
+  
+  /* Accent Colors */
+  --color-primary: #2563EB;
+  --color-primary-dark: #1D4ED8;
+  --color-primary-light: var(--bg-primary-light);
+
+  /* Classification Colors */
+  --color-class-first: var(--text-class-first);
+  --color-class-upper: var(--text-class-upper);
+  --color-class-lower: var(--text-class-lower);
+  --color-class-third: var(--text-class-third);
+  --color-class-pass: var(--text-class-pass);
+  --color-class-fail: var(--text-class-fail);
+
+  /* Classification Backgrounds */
+  --color-class-first-bg: var(--bg-class-first);
+  --color-class-upper-bg: var(--bg-class-upper);
+  --color-class-lower-bg: var(--bg-class-lower);
+  --color-class-third-bg: var(--bg-class-third);
+  --color-class-pass-bg: var(--bg-class-pass);
+  --color-class-fail-bg: var(--bg-class-fail);
+
+  /* Spacing */
+  --spacing-8: 0.5rem;
+  
+  /* Radii */
+  --radius-md: 0.75rem; /* 12px */
+  --radius-lg: 1rem; /* 16px */
+  --radius-xl: 1.5rem; /* 24px */
+
+  /* Shadows */
+  --shadow-ambient: 0 20px 40px -10px rgba(19, 27, 46, 0.06);
+}
+
+@layer base {
+  :root {
+    --bg-main: #F8FAFC;
+    --bg-surface: #FFFFFF;
+    --bg-surface-hover: #F2F3FF;
+    --text-main: #0F172A;
+    --text-muted: #64748B;
+    --text-inverse: #FFFFFF;
+    --bg-primary-light: #DBE1FF;
+
+    --text-class-first: #166534;
+    --bg-class-first: #DCFCE7;
+    --text-class-upper: #16A34A;
+    --bg-class-upper: #DCFCE7;
+    --text-class-lower: #F59E0B;
+    --bg-class-lower: #FEF3C7;
+    --text-class-third: #EA580C;
+    --bg-class-third: #FFEDD5;
+    --text-class-pass: #DC2626;
+    --bg-class-pass: #FEE2E2;
+    --text-class-fail: #7F1D1D;
+    --bg-class-fail: #FEF2F2;
+  }
+
+  .dark {
+    --bg-main: #020617;
+    --bg-surface: #0F172A;
+    --bg-surface-hover: #1E293B;
+    --text-main: #F8FAFC;
+    --text-muted: #94A3B8;
+    --text-inverse: #0F172A;
+    --bg-primary-light: #1E3A8A;
+
+    --text-class-first: #4ADE80;
+    --bg-class-first: #052E16;
+    --text-class-upper: #4ADE80;
+    --bg-class-upper: #052E16;
+    --text-class-lower: #FBBF24;
+    --bg-class-lower: #451A03;
+    --text-class-third: #FB923C;
+    --bg-class-third: #431407;
+    --text-class-pass: #F87171;
+    --bg-class-pass: #450A0A;
+    --text-class-fail: #FCA5A5;
+    --bg-class-fail: #450A0A;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

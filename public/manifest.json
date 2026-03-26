@@ -1,0 +1,16 @@
+{
+  "name": "KNUST CWA Predictor",
+  "short_name": "CWA Tool",
+  "description": "Plan smarter. Know where you stand. Project your KNUST Cumulative Weighted Average in real-time.",
+  "start_url": "/calculator",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0ea5e9",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "192x192 512x512",
+      "type": "image/x-icon"
+    }
+  ]
+}
