@@ -14,10 +14,13 @@ export default function LandingPage() {
         <div className="font-semibold text-xl text-text-primary tracking-tight">
           KNUST <span className="text-primary">CWA Predictor</span>
         </div>
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-4 md:gap-8">
+          <Link href="/how-it-works" className="hidden sm:block text-sm font-semibold text-text-secondary hover:text-primary transition-all px-3 py-2 rounded-lg">
+            How It Works
+          </Link>
           <ThemeToggle />
-          <Link href="/calculator" className="text-sm font-medium text-text-secondary hover:text-primary transition-colors hover:bg-surface-hover px-4 py-2 rounded-xl">
-            Calculator Studio &rarr;
+          <Link href="/calculator" className="text-sm font-bold text-white bg-primary hover:bg-primary-dark px-5 py-2.5 rounded-xl shadow-md transform hover:-translate-y-0.5 transition-all">
+            Open Studio
           </Link>
         </div>
       </nav>
@@ -45,31 +48,21 @@ export default function LandingPage() {
           >
             Start Calculating <ChevronRight className="w-5 h-5" />
           </Link>
-          <a 
-            href="#features" 
-            className="flex items-center gap-2 bg-surface text-text-primary border border-surface-hover hover:border-text-secondary/30 px-8 py-4 rounded-xl font-medium text-lg transition-all duration-300 w-full sm:w-auto justify-center"
+          <Link 
+            href="/how-it-works" 
+            className="flex items-center gap-2 bg-surface text-text-primary border border-surface-hover hover:border-primary-light/50 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 w-full sm:w-auto justify-center shadow-sm hover:shadow-md"
           >
             How It Works
-          </a>
+          </Link>
         </div>
       </main>
 
       {/* Stats Bar */}
       <div className="w-full border-y border-surface-hover bg-surface/50 py-8 relative z-10">
-        <div className="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+        <div className="max-w-5xl mx-auto px-6 flex justify-center text-center">
           <div className="flex flex-col">
-            <span className="text-3xl font-bold text-primary-dark">8,000+</span>
-            <span className="text-sm font-medium text-text-secondary uppercase tracking-wider mt-1">Students Planned</span>
-          </div>
-          <div className="hidden md:block w-px h-12 bg-surface-hover text-surface-hover"></div>
-          <div className="flex flex-col">
-            <span className="text-3xl font-bold text-text-primary">99.9%</span>
-            <span className="text-sm font-medium text-text-secondary uppercase tracking-wider mt-1">Formula Accuracy</span>
-          </div>
-          <div className="hidden md:block w-px h-12 bg-surface-hover"></div>
-          <div className="flex flex-col">
-            <span className="text-3xl font-bold text-text-primary">6</span>
-            <span className="text-sm font-medium text-text-secondary uppercase tracking-wider mt-1">Degree Classes</span>
+            <span className="text-4xl font-bold text-primary-dark">99.9%</span>
+            <span className="text-sm font-semibold text-text-secondary uppercase tracking-widest mt-2">Certified KNUST Formula Accuracy</span>
           </div>
         </div>
       </div>

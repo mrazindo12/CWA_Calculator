@@ -20,6 +20,10 @@ export const metadata: Metadata = {
   title: "KNUST CWA Predictor",
   description: "Plan smarter. Know where you stand. Project your Cumulative Weighted Average in real-time with KNUST's official formula.",
   manifest: "/manifest.json",
+  icons: {
+    icon: "/icon.png",
+    apple: "/icon.png",
+  },
   appleWebApp: {
     title: "CWA Tool",
     statusBarStyle: "default",
